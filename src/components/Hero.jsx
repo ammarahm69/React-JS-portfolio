@@ -15,7 +15,7 @@ function Hero() {
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center text-center overflow-hidden mt-32">
-      <div className="mt-60">
+      <div className="mt-72">
         <BackgroundCirle />
       </div>
 

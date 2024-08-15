@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Education from "./components/Education";
 import { HashRouter as Router } from "react-router-dom";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
           <About />
         </section>
         {/* Skills */}
-
+        <section id="education" className="snap-center">
+          <Education />
+        </section>
         {/* Projects */}
 
         {/* Contact me */}
