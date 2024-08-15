@@ -21,7 +21,7 @@ export default function BackgroundCirle() {
       >
         <div className="border border-[#333333] h-[200px] w-[200px] rounded-full  animate-ping" />
         <div className="border [#333333] absolute h-[350px] w-[350px] rounded-full  animate-ping" />
-        <div className="border border-[#787575] border-2		border-r-white absolute  h-[550px] w-[550px] rounded-full animate-spin" />
+        <div className="border border-[#787575] border-2		border-r-white absolute  h-[620px] w-[620px] rounded-full animate-spin" />
       </motion.div>
       <div>
         <img
