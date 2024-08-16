@@ -11,7 +11,7 @@ function Hero() {
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 3000,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center text-center overflow-hidden mt-32">
@@ -42,6 +42,9 @@ function Hero() {
           </a>
           <a href="#projects">
             <button className="heroButton tracking-widest">Projects</button>
+          </a>
+          <a href="#contact">
+            <button className="heroButton tracking-widest">Contact</button>
           </a>
         </div>
       </div>

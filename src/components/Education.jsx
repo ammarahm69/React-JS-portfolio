@@ -9,8 +9,8 @@ function Education() {
         Education
       </h3>
       <motion.div
-        initial={{ x: -400 }}
-        whileInView={{ x: 0}}
+        initial={{ y: -200  }}
+        whileInView={{ y: 0}}
         transition={{ duration: 1.3 }}
       >
 
