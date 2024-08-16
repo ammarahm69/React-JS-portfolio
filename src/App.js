@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skill from "./components/Skills";
+import Projects from "./components/Projects";
 import Education from "./components/Education";
 import { HashRouter as Router } from "react-router-dom";
 
@@ -17,13 +19,19 @@ function App() {
         <section id="about" className="snap-center">
           <About />
         </section>
-        {/* Skills */}
+        {/* Education */}
         <section id="education" className="snap-center">
           <Education />
         </section>
-        {/* Projects */}
+        {/* Skills */}
+        <section id="skills" className="snap-start">
+          <Skill />
+        </section>
+        {/*  Projects */}
 
-        {/* Contact me */}
+        <section id="projects" className="snap-start">
+          <Projects />
+        </section>
       </div>
     </Router>
   );

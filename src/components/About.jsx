@@ -24,8 +24,14 @@ function About() {
           background
         </h1>
         <p className="">
-        Hello! My name is <span className="text-red-500">Ammar Ahmed</span>, I like creating new things for internet. From a younger age, I have been interested in programming, as a kid most of my time I've spent in inspect element playing with colors and codes generating loops for sending infinite messages, cracking locked screen overflows and many more. so finally at the age of 17. I decided to convert this passion into career.
-        A passionate Frontend Web Developer having an experience of building Websites with latest technology.
+          Hello! My name is <span className="text-red-500">Ammar Ahmed</span>, I
+          like creating new things for internet. From a younger age, I have been
+          interested in programming, as a kid most of my time I've spent in
+          inspect element playing with colors and codes generating loops for
+          sending infinite messages, cracking locked screen overflows and many
+          more. so finally at the age of 17. I decided to convert this passion
+          into career. A passionate Frontend Web Developer having an experience
+          of building Websites with latest technology.
         </p>
       </div>
     </div>
