@@ -6,7 +6,7 @@ function Proficient({ directionLeft }) {
     <div className="group relative flex cursor-pointer">
       <motion.img
         initial={{
-          x: directionLeft ? -400 : 500,
+          x: directionLeft ? -200 : 200,
           opacity: 0,
         }}
         transition={{
