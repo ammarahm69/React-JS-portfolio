@@ -1,3 +1,5 @@
+import { HashRouter as Router } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,7 +8,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import IconHome from "./components/home.webp";
-import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Hero />
         </section>
 
+      
         <section id="about" className="snap-center">
           <About />
         </section>
@@ -38,7 +40,8 @@ function App() {
           <Contact />
         </section>
 
-        <a href="#hero">
+        {/* Smooth scroll to the hero section when clicking the footer icon */}
+        <HashLink smooth to="#hero">
           <footer className="sticky bottom-0 w-full cursor-pointer">
             <div className="flex items-center justify-center">
               <img
@@ -48,7 +51,7 @@ function App() {
               />
             </div>
           </footer>
-        </a>
+        </HashLink>
       </div>
     </Router>
   );

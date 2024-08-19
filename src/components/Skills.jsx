@@ -10,14 +10,14 @@ import FirebaseIcon from "./firebase.svg";
 import Bootstrap from "./bootstarp.svg";
 function Skills() {
   const skills = [
-    { id: 1, image: Html, proficiency: "90%", directionLeft: false },
-    { id: 2, image: Css, proficiency: "75%", directionLeft: false },
-    { id: 3, image: Js, proficiency: "60%", directionLeft: false },
-    { id: 4, image: Tailwind, proficiency: "70%", directionLeft: false },
-    { id: 5, image: Taterial, proficiency: "70%", directionLeft: false },
-    { id: 6, image: ReactIcon, proficiency: "75%", directionLeft: false },
-    { id: 7, image: FirebaseIcon, proficiency: "65%", directionLeft: false },
-    { id: 8, image: Bootstrap, proficiency: "80%", directionLeft: false },
+    { id: 1, image: Html, proficiency: "90%" },
+    { id: 2, image: Css, proficiency: "75%" },
+    { id: 3, image: Js, proficiency: "60%" },
+    { id: 4, image: Tailwind, proficiency: "70%" },
+    { id: 5, image: Taterial, proficiency: "70%" },
+    { id: 6, image: ReactIcon, proficiency: "75%" },
+    { id: 7, image: FirebaseIcon, proficiency: "65%" },
+    { id: 8, image: Bootstrap, proficiency: "80%" },
   ];
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px:10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
