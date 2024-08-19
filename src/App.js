@@ -5,6 +5,7 @@ import Skill from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
+import IconHome from "./components/home.webp";
 import { HashRouter as Router } from "react-router-dom";
 
 function App() {
@@ -36,6 +37,18 @@ function App() {
         <section id="contact" className="snap-start">
           <Contact />
         </section>
+
+        <a href="#hero">
+          <footer className="sticky bottom-0 w-full cursor-pointer">
+            <div className="flex items-center justify-center">
+              <img
+                src={IconHome}
+                alt=""
+                className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              />
+            </div>
+          </footer>
+        </a>
       </div>
     </Router>
   );
