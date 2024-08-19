@@ -1,6 +1,28 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { PiReadCvLogo } from "react-icons/pi";
+
+const DownloadCVButton = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = ""; // Adjust path if necessary
+    link.download = "Ammar_CV.pdf";
+    link.click();
+  };
+
+  return (
+    <button
+      className="flex items-center text-gray-300 cursor-pointer"
+      onClick={handleDownload}
+    >
+      <PiReadCvLogo className="w-7 h-7" />
+      <p className="uppercase hidden md:inline-flex text-gray-400 ms-3">
+        Download CV
+      </p>
+    </button>
+  );
+};
 
 function Header() {
   return (
@@ -8,8 +30,8 @@ function Header() {
       <motion.div
         className="flex flex-row items-center"
         initial={{ x: -500, opacity: 0, scale: 0.5 }} // Initial state
-        animate={{x:0 , opacity:1 , scale:1}} // Animate to this state
-        transition={{ duration:1.5 }} // Duration of the animation
+        animate={{ x: 0, opacity: 1, scale: 1 }} // Animate to this state
+        transition={{ duration: 1.5 }} // Duration of the animation
       >
         {/* Social Icons */}
         <SocialIcon
@@ -33,20 +55,12 @@ function Header() {
       </motion.div>
 
       <motion.div
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
-        initial={{ x:500 , opacity:0 , scale:0.5 }} 
-        animate={{ x:0 , opacity:1 , scale:1}} 
+        className="flex flex-row items-center"
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="uppercase hidden md:inline-flex text-gray-400">
-          Get In Touch
-        </p>
+        <DownloadCVButton />
       </motion.div>
     </header>
   );
