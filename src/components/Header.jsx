@@ -44,13 +44,13 @@ const Header = () => {
         <a
           href={resume}
           target="_blank"
-          className="flex items-center space-x-2"
+          className="flex items-center space-x-2 mt-3"
         >
           <PiReadCvLogo
             className="text-gray-500 hover:text-gray-700"
-            size={28}
+            size={20}
           />
-          <span className="text-gray-500 hover:text-gray-700">Download CV</span>
+          <span className="text-gray-500 hover:text-gray-700 text-sm">Download CV</span>
         </a>
       </motion.div>
     </header>

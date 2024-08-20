@@ -37,7 +37,7 @@ function Contact() {
 
   return (
     <div className="relative h-screen flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-3xl font-semibold">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-3xl font-semibold">
         Contact
       </h3>
       <div className="space-y-12 flex flex-col mt-32 px-4 sm:px-8">
