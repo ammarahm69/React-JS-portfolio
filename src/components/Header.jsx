@@ -2,29 +2,9 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { PiReadCvLogo } from "react-icons/pi";
+import resume from "../pdf/front-end-cv.pdf";
 
-const DownloadCVButton = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = ""; // Adjust path if necessary
-    link.download = "Ammar_CV.pdf";
-    link.click();
-  };
-
-  return (
-    <button
-      className="flex items-center text-gray-300 cursor-pointer"
-      onClick={handleDownload}
-    >
-      <PiReadCvLogo className="w-7 h-7" />
-      <p className="uppercase hidden md:inline-flex text-gray-400 ms-3">
-        Download CV
-      </p>
-    </button>
-  );
-};
-
-function Header() {
+const Header = () => {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20">
       <motion.div
@@ -60,10 +40,21 @@ function Header() {
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <DownloadCVButton />
+        {/* CV Icon */}
+        <a
+          href={resume}
+          target="_blank"
+          className="flex items-center space-x-2"
+        >
+          <PiReadCvLogo
+            className="text-gray-500 hover:text-gray-700"
+            size={28}
+          />
+          <span className="text-gray-500 hover:text-gray-700">Download CV</span>
+        </a>
       </motion.div>
     </header>
   );
-}
+};
 
 export default Header;
