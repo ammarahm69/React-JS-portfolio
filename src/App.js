@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+
         <Header />
 
         <section id="hero" className="snap-start">
@@ -36,13 +37,14 @@ function App() {
           <Projects />
         </section>
 
-        <section id="contact" className="snap-start">
+        <section id="contact" className="snap-end">
           <Contact />
         </section>
 
+
         {/* Smooth scroll to the hero section when clicking the footer icon */}
         <HashLink smooth to="#hero">
-          <footer className="sticky bottom-0 w-full cursor-pointer">
+          <footer className="sticky bottom-16 w-full cursor-pointer animate-bounce">
             <div className="flex items-center justify-center">
               <img
                 src={IconHome}
