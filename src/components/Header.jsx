@@ -2,7 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { PiReadCvLogo } from "react-icons/pi";
-import resume from "../pdf/front-end-cv.pdf";
+import resume from "../pdf/full-stack.pdf";
 
 const Header = () => {
   return (
