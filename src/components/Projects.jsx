@@ -1,7 +1,8 @@
 import React from "react";
-import Case1 from "./case-1.png";
-import Case2 from "./case-2.png";
-import Case3 from "./case-3.png";
+import Amazon from "./case-1.png";
+import AIBOT from "./Case-4.png";
+import Meet from "./case-3.png";
+import BNB from "./case-2.png"
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -9,27 +10,31 @@ function Projects() {
     {
       id: 1,
       name: "Amazon Clone",
-      description:
-        "A fully responsive e-commerce application built with React and Redux, replicating Amazon's core features. Users can add or remove items to their cart. Includes Firebase authentication, demonstrating skills in front-end development and state management. Also optimized for both desktop and mobile devices.",
+      description: "A fully responsive e-commerce application built with React and Redux, replicating Amazon's core features. Users can add or remove items to their cart. Includes Firebase authentication, demonstrating skills in front-end development and state management. Also optimized for both desktop and mobile devices.",
       link: "https://amazon-react-clone-coral.vercel.app/",
+      image: Amazon,
     },
     {
       id: 2,
-      name: "AirBnb",
-      description:
-        "An Airbnb clone built with React, featuring a custom date picker component. Users can search for listings, select dates, and book stays. This project showcases my skills in front-end development and UI/UX design. Supported only on desktop",
-      link: "https://airbnb-react-js-inky.vercel.app/",
+      name: "AI-Chat Bot",
+      description: "Designed and implemented an AI chatbot Google Gemini clone using React JS, focusing on efficient state management with the useContext hook. Integrated conversational AI features for a seamless user experience. Optimized the application's performance for real-time interaction and responsiveness",
+      image: AIBOT,
     },
     {
       id: 3,
+      name: "AirBnb",
+      description: "An Airbnb clone built with React, featuring a custom date picker component. Users can search for listings, select dates, and book stays. This project showcases my skills in front-end development and UI/UX design. Supported only on desktop.",
+      image: BNB,
+    },
+    {
+      id: 4,
       name: "Meet Ahsan",
-      description:
-        "An innovative educational platform designed to connect learners with expert instructors. 'Meet Ahsan' offers a wide range of courses, personalized learning paths, and interactive sessions. Built with a user-friendly interface, the platform focuses on making education accessible and engaging for everyone. This project demonstrates my ability to create impactful digital learning experiences.",
-      link: "https://meet-ahsan.vercel.app",
+      description: "An innovative educational platform designed to connect learners with expert instructors. 'Meet Ahsan' offers a wide range of courses, personalized learning paths, and interactive sessions. Built with a user-friendly interface, the platform focuses on making education accessible and engaging for everyone. This project demonstrates my ability to create impactful digital learning experiences.",
+      image: Meet, // Update this image accordingly
     },
   ];
-
-  const images = [Case1, Case2, Case3];
+const images = [Amazon ,AIBOT ,BNB,Meet]
+  
 
   return (
     <motion.div
