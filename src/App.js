@@ -44,7 +44,7 @@ function App() {
 
         {/* Smooth scroll to the hero section when clicking the footer icon */}
         <HashLink smooth to="#hero">
-          <footer className="sticky bottom-16 w-full cursor-pointer animate-bounce">
+          <footer className="sticky bottom-5 w-full cursor-pointer animate-bounce z-20">
             <div className="flex items-center justify-center">
               <img
                 src={IconHome}

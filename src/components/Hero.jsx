@@ -31,7 +31,7 @@ function Hero() {
         {/* Button for About,Skills*/}
         <div className="pt-4">
          <a href="#about">
-            <button className="heroButton tracking-widest">About</button>
+            <button className="heroButton">About</button>
          </a>
          
           <a href="#education">

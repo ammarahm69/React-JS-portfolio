@@ -42,13 +42,13 @@ export default function BackgroundCirle() {
       >
         <div className="border-2 border-[#333333] h-[200px] w-[200px] rounded-full animate-ping" />
         <div
-          className="border-4 absolute h-[350px] w-[350px] rounded-full animate-ping"
+          className="border-4 absolute h-[370px] w-[370px] rounded-full animate-ping"
           style={{
             borderColor: randomColor,
             boxShadow: `0 0 15000px ${randomColor}, 0 0 15000px ${randomColor}`,
           }}
         />
-        <div className="border-2 border-[#787575] absolute h-[620px] w-[620px] rounded-full" />
+        <div className="border-2 border-[#e7e6e6] absolute h-[650px] w-[650px] rounded-full animate-orbit" />
       </motion.div>
       <div>
         <img
